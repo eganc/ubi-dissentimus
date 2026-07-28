@@ -12,3 +12,39 @@ export interface Crux {
   surfacesAs: string[];
   body: CruxBodyBlock[];
 }
+
+export type SessionMode = "group" | "solo";
+export type ParticipantRole = "host" | "participant";
+export type RoundPhase = "drafting" | "sealed" | "revealed" | "closed";
+export type ClaimType = "evidence" | "value";
+
+export interface RoundState {
+  id: string;
+  sessionId: string;
+  parentRoundId: string | null;
+  depth: number;
+  claimText: string;
+  claimType: ClaimType | null;
+  phase: RoundPhase;
+}
+
+export interface ParticipantState {
+  id: string;
+  displayName: string;
+  role: ParticipantRole;
+  active: boolean;
+  accepted: boolean;
+}
+
+export interface SessionStatePayload {
+  round: RoundState;
+  participants: ParticipantState[];
+}
+
+export interface ParticipantCredentials {
+  sessionId: string;
+  participantId: string;
+  token: string;
+  role: ParticipantRole;
+  roundId: string;
+}
