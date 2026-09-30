@@ -37,6 +37,17 @@ Every user-facing string. This doubles as the tone spec for the facilitator prom
 **Primary button:** Start a session
 **Secondary:** Try it alone
 **Tertiary link:** Read a worked example
+**Quaternary link:** Browse the cruxes
+
+---
+
+## 1a · Worked example
+
+Worked examples are markdown files in `/content/examples/`, parsed at build time like the cruxes. Each one ends at an outcome with both positions intact — never with a verdict.
+
+**Back link:** Back to the start
+**Related crux label:** The crux underneath this one
+**Disclosure (first line of any example drawn from a real exchange):** Adapted from a real exchange. Names, places and identifying details have been changed. The positions are theirs.
 
 ---
 

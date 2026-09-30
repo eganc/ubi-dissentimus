@@ -44,6 +44,14 @@ export function CruxBody({ blocks }: { blocks: CruxBodyBlock[] }) {
           );
         }
 
+        if (block.kind === "heading") {
+          return (
+            <h2 key={index} className="pt-4 text-lg font-semibold text-neutral-900">
+              {renderInline(block.text)}
+            </h2>
+          );
+        }
+
         if (block.kind === "list") {
           return (
             <ol key={index} className="list-decimal space-y-2 pl-5">

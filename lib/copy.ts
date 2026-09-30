@@ -11,6 +11,22 @@ export const copy = {
     description:
       "Ubi is a structure for arguments that have stopped going anywhere. It doesn't decide who's right. It finds the point where two people's reasoning parted, and stops there.",
   },
+  landing: {
+    h1: "Find out where you actually disagree.",
+    sub: "Ubi is a structure for arguments that have stopped going anywhere. It doesn't decide who's right. It finds the point where two people's reasoning parted, and stops there.",
+    howItWorksTitle: "How it works",
+    howItWorks: [
+      "Agree on the exact claim in dispute.",
+      "Everyone privately writes what would change their mind. Nobody sees anyone else's until all are in.",
+      "Compare. Then go one level down, or agree you've hit the bottom.",
+    ],
+    exampleLink: "Read a worked example",
+    cruxesLink: "Browse the cruxes",
+  },
+  examples: {
+    backLink: "Back to the start",
+    relatedCrux: "The crux underneath this one",
+  },
   cruxes: {
     indexTitle: "Cruxes",
     backLink: "Back to cruxes",
